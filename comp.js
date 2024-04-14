@@ -7,7 +7,7 @@ function comp(array1,array2){
     for(let i=0;i<array2.length;i++){
         found=false;
         foundidx=-1;
-        foundidx=array1.findIndex(num=>num===array2[i]||array2[i]===num*num)
+        foundidx=array1.findIndex(num=>num===array2[i]||array2[i]===num*num) //no need num===array2[i], as all are squared,,the q couldve worded better
         
         console.log(i+" "+foundidx)
         console.log("   "+array2[i]+" "+array1[foundidx])
